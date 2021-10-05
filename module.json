@@ -1,0 +1,56 @@
+{
+	"name": "Sequence Remote",
+	"type": "OSC",
+	"path": "Hardware",
+	
+	"version": "0.0.1",
+	"description": "Module to control sequences via OSC (e.g. M5 Stick)",
+	"url": "",
+	"downloadURL": "",
+	
+	"hasInput": true,
+	"hasOutput": true, 
+	"hideDefaultCommands": false,
+	"hideDefaultParameters": [
+		"autoRange",
+		"autoFeedback",
+		"pass_through",
+		"useHierarchy",
+		"colorSendMode"
+	],
+	
+	"defaults": {
+		"autoAdd": true,
+		"OSC Input": {
+			"localPort": 12034
+		},
+		"OSC Outputs": {
+			"OSC Output": {
+				"local": false,
+				"remoteHost": "192.168.0.255",
+				"remotePort": 12033
+			}
+		}
+	},
+	
+	"parameters": {
+		"Detect Remotes": { "type": "Trigger", "description": "Detect remotes on networks" },
+		"Selected Sequence Index": { "type": "Integer", "description": "Index of selected sequence", "default": 0},
+		"Selected Sequence Name": { "type": "String", "description": "Name of selected sequence", "default": "", "readOnly": true },
+		"Play": { "type": "Trigger", "description": "Play selected sequence" },
+		"Pause": { "type": "Trigger", "description": "Pause selected sequence" },
+		"Toggle Play": { "type": "Trigger", "description": "Toggle play/pause selected sequence" },
+		"Stop": { "type": "Trigger", "description": "Stop selected sequence" },
+		"Stop All": { "type": "Trigger", "description": "Stop all sequences" }
+	},
+	
+	"scripts": [
+		"remote.js"
+	],
+	
+	"values": {
+	},
+	
+	"commands": {
+	}
+}
