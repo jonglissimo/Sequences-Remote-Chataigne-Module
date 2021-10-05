@@ -14,6 +14,7 @@ function init() {
 	script.setUpdateRate(4);
 
 	local.parameters.oscInput.localPort.setAttribute("readonly",true);
+	detectRemotes();
 }
 
 function update(deltaTime) {
