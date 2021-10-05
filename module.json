@@ -1,12 +1,12 @@
 {
-	"name": "Sequence Remote",
+	"name": "Sequences Remote Chataigne Module",
 	"type": "OSC",
 	"path": "Hardware",
 	
 	"version": "0.0.1",
 	"description": "Module to control sequences via OSC (e.g. M5 Stick)",
-	"url": "",
-	"downloadURL": "",
+	"url": "https://github.com/jonglissimo/Sequences-Remote-Chataigne-Module",
+	"downloadURL": "https://github.com/jonglissimo/Sequences-Remote-Chataigne-Module/archive/refs/heads/main.zip",
 	
 	"hasInput": true,
 	"hasOutput": true, 
