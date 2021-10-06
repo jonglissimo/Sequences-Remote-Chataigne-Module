@@ -6,8 +6,8 @@
 
 #define LED_PIN 10
 
-char ssid[] = "jonglissimo";
-char password[] = "lightpainting";
+char ssid[] = "myWifi";
+char password[] = "secret";
 
 WiFiUDP udp;
 const int localPort = 12033; // input port
